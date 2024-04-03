@@ -5,6 +5,16 @@ xhr.open('GET', url, true)
 xhr.responseType = 'json'
 xhr.send();
 
+window.onload = function(){
+    var searchBar = document.getElementById("search");
+    console.log(searchBar)
+    searchBar.addEventListener("keydown", function (e) {
+        if (e.code === "Enter") {
+            getRecs()
+        }
+    });
+}
+
 function fillSearch(key) {
     var searchResults = document.getElementById("recs");
     searchResults = document.getElementById("recs");
