@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Travel Site</title>
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="travel_recommendation.js"></script>
+    </head>
+    <body id="body" style = "background-image: url('pics/main_page.jpg');">
+        <nav>
+            <a href="#">HOME</a>
+            <a href="aboutUs.html">ABOUT US</a>
+            <a href="contact.html">CONTACT US</a>
+
+            <span><div>
+                <input type="text" id="search" placeholder="Search..." name="search">
+                <button type="submit" onclick="getRecs()">Submit</button>
+                <button type="clear" onclick="clearRecs()">Clear</button>
+            </div></span>
+
+            <span><div id="recs"></div></span>
+        </nav>
+
+        <h1>Go Where No Man Has Gone Before!</h1>
+        <h3>Travel to your hearts content on this travel site.</h3>
+        
+    </body>
+</html>
